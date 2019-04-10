@@ -26,7 +26,7 @@ class SearchBar extends StatelessWidget {
         children: <Widget>[
           Text('北京',
               style:
-                  TextStyle(color: Colors.white, fontSize: 18.0, fontWeight: FontWeight.w500)),
+                  TextStyle(color: Colors.white, fontSize: 16.0, fontWeight: FontWeight.w500)),
           Icon(
             IconFont.arrow_down,
             color: Colors.white,
@@ -40,10 +40,10 @@ class SearchBar extends StatelessWidget {
     return Expanded(
       flex: 1,
       child: Container(
-        height: 35.0,
+        height: 28.0,
         decoration: BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.all(Radius.circular(35.0)),
+            borderRadius: BorderRadius.all(Radius.circular(28.0)),
             boxShadow: [BoxShadow(color: Color.fromRGBO(0, 0, 0, .08), offset: Offset(1.0, 2.0))]),
         child: Row(
           children: <Widget>[
@@ -52,7 +52,7 @@ class SearchBar extends StatelessWidget {
               child: Icon(Icons.search, color: Colors.blue[200],),
             ),
             Text('白云深处的边寨风光',
-            style: TextStyle(fontSize: 18.0, color: Color.fromRGBO(102, 102, 102, 1)),)
+            style: TextStyle(fontSize: 16.0, color: Color.fromRGBO(102, 102, 102, 1)),)
           ],
         ),
       ),

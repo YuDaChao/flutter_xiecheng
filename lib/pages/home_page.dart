@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../components/search_bar.dart';
 import '../components/banner_swiper.dart';
 import '../components/nav.dart';
+import '../components/grid_nav.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -40,10 +41,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            Container(
-              height: 10.0,
-              color: Colors.blueAccent,
-            )
+            GridNav([])
           ],
         ),
       ),

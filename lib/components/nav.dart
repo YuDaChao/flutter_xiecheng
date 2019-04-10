@@ -12,7 +12,9 @@ class Nav extends StatelessWidget {
           borderRadius: BorderRadius.all(Radius.circular(8.0)),
           boxShadow: [
             BoxShadow(
-                color: Color.fromRGBO(0, 0, 0, .08), offset: Offset(1.0, 2.0))
+                color: Color.fromRGBO(0, 0, 0, .08), offset: Offset(0.0, 1.0),
+                spreadRadius: 2.0,
+                blurRadius: 8.0)
           ]),
       child: Row(
         children: <Widget>[
@@ -41,7 +43,7 @@ class Nav extends StatelessWidget {
               )
             ),
           ),
-          Text('$text', style: TextStyle(color: Colors.black),)
+          Text('$text', style: TextStyle(color: Colors.black, fontSize: 13.0),)
         ],
       ),
     );

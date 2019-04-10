@@ -22,7 +22,12 @@ class _BannerSwiperState extends State<BannerSwiper> {
         itemCount: widget.bannerList.length,
         pagination: SwiperPagination(
           alignment: Alignment.bottomRight,
-          margin: EdgeInsets.only(bottom: 70.0, right: 20.0)
+          margin: EdgeInsets.only(bottom: 70.0, right: 20.0),
+          builder: DotSwiperPaginationBuilder(
+            color: Color.fromRGBO(250, 250, 250, 1),
+            activeColor: Colors.white,
+            size: 5.0
+          )
         ),
         // control: SwiperControl(),
         itemBuilder: (BuildContext context, int index) {
