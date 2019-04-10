@@ -63,7 +63,7 @@ class _GridNavState extends State<GridNav> {
                 ])),
             child: Row(
               children: <Widget>[
-                _buildHotel('assets/images/gn5.png', '旅游'),
+                _buildHotel('assets/images/gn5.png', '旅游', tag: '11日会员日'),
                 _buildMinSu('assets/images/gn6.png', '高铁游'),
                 _buildItem('邮轮游'),
                 _buildItem('定制游'),
@@ -75,7 +75,7 @@ class _GridNavState extends State<GridNav> {
     );
   }
 
-  Widget _buildHotel(bgImage, title) {
+  Widget _buildHotel(bgImage, title, { tag }) {
     return Expanded(
       child: Stack(
         children: <Widget>[
@@ -102,7 +102,12 @@ class _GridNavState extends State<GridNav> {
               '$bgImage',
               width: 65.0,
             ),
-          )
+          ),
+          tag != null ? Positioned(
+            top: 0,
+            right: 0,
+            child: _buildTag(tag),
+          ) : Container()
         ],
       ),
     );
@@ -199,7 +204,12 @@ class _GridNavState extends State<GridNav> {
 
   Widget _buildTag(tag) {
     return Container(
-      child: Text('$tag'),
+      padding: EdgeInsets.fromLTRB(5.0, 2.0, 5.0, 2.0),
+      decoration: BoxDecoration(
+        color: Colors.yellow,
+        borderRadius: BorderRadius.only(bottomLeft: Radius.circular(8.0))
+      ),
+      child: Text('$tag', style: TextStyle(color: Colors.red, fontSize: 10.0),),
     );
   }
 }
