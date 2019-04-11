@@ -59,6 +59,16 @@ flutter:
    - assets/images/gn4.png
    - assets/images/gn5.png
    - assets/images/gn6.png
+   - assets/images/subnav01.png
+   - assets/images/subnav02.png
+   - assets/images/subnav03.png
+   - assets/images/subnav04.png
+   - assets/images/subnav05.png
+   - assets/images/subnav06.png
+   - assets/images/subnav07.png
+   - assets/images/subnav08.png
+   - assets/images/subnav09.png
+   - assets/images/subnav10.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
