@@ -14,15 +14,15 @@ class _BannerSwiperState extends State<BannerSwiper> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 260.0,
+      height: MediaQuery.of(context).size.width / 1.7,
       width: MediaQuery.of(context).size.width,
       child: Swiper(
-        itemHeight: 260.0,
+        itemHeight: MediaQuery.of(context).size.width / 1.7,
         autoplay: true,
         itemCount: widget.bannerList.length,
         pagination: SwiperPagination(
           alignment: Alignment.bottomRight,
-          margin: EdgeInsets.only(bottom: 70.0, right: 20.0),
+          margin: EdgeInsets.only(bottom: 50.0, right: 20.0),
           builder: DotSwiperPaginationBuilder(
             color: Color.fromRGBO(250, 250, 250, 1),
             activeColor: Colors.white,
@@ -42,7 +42,7 @@ class _BannerSwiperState extends State<BannerSwiper> {
       clipper: MyCliper(),
       child: Image.asset(
         assetsImage,
-        fit: BoxFit.fill,
+        fit: BoxFit.cover,
       ),
     );
   }

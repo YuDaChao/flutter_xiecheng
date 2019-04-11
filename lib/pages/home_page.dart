@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: <Widget>[
             Container(
-              height: 290.0,
+              height: MediaQuery.of(context).size.width / 1.7 + 30.0,
               child: Stack(
                 children: <Widget>[
                   BannerSwiper(_bannerList),
@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
                     child: SearchBar(),
                   ),
                   Positioned(
-                    top: 200.0,
+                    top: MediaQuery.of(context).size.width / 1.7 - 50.0,
                     child: Nav(),
                   )
                 ],
